@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>webpack</title>
+	<style>
+		/*
+			La etiqueta style nos permite agregar CSS(styles) a nuestro html
+			Para llamar a un id se utiliza el signo de # y luego el nombre del id.
+			Para llamar a una clase se utiliza el signo de . y luego el nombre de la clase
+		*/
+		#logo{
+			color:#3EAAE3;
+		}
+		.second_color{
+			color:#E74C3C;
+		}
+		img{
+			max-width: 100%;
+		}
+
+	</style>
+	<script src="https://use.fontawesome.com/90036920c0.js"></script>
+</head>
+<body>
+	<!-- Header es una tag donde va a contener el menu principal ademas podria contener el titulo principal de la
+	 pagina se despliega como un bloque. es una cajita -->
+	<header>
+		<nav>
+			<!--
+					El link tiene varias propiedades:
+					1. href : el link donde quiero que me lleve al darle click
+					2. target : la propiedad que me permite decir si quiero abrir ese url en la misma ventana del navegador
+					o en una ventana nueva.
+					id y class son propiedades que se pueden agregar a un tag en especifico para luego aplicar algun
+					estilo o accion solo puede a ver un id con el mismo nombre en el DOM
+			-->
+			<a href="#" id="logo">
+				Cont<span class="second_color">rata</span>
+			</a>
+			<!--
+				UL se utiliza para una lista de elementos, dentro del el tenemos un li que va a ser el elemento y dentro
+				del li podemos tener cualquier otro tag de html
+				ul -> lista desordenada
+				ol -> lista ordenada
+			-->
+			<!-- Open Ul -->
+			<ul>
+				<li>
+				    <a target="_blank" href="http://facebook.com"><strong>Como funciona?</strong></a> 
+				    
+					
+				</li>
+				<li>
+					<a href="#">Encuentra Profecionales</a>
+				</li>
+			</ul>
+			<!-- Close Ul -->
+			<ul>
+				<li>
+					<a href="#">Registrarse</a>
+				</li>
+				<li>
+					<a href="#">Ingresar</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="hero">
+			<!--
+				h1 solo puede existir uno por pagina
+				form se utiliza para enviar datos al servidor
+				dentro del form podemos tener input de type text, password, phone, email, submit, textarea, file
+
+			-->
+			<h1>Encuentra un profesional</h1>
+			<form>
+				<!--<label>Que tipo de profesional ocupas?</label>-->
+				<input type="text" placeholder="Que tipo de profesional ocupas?" name="job">
+				<input type="submit" value="Search">
+			</form>
+			<img src="src/images/hero.png" alt="Hero Images">
+		</div>
+		<section class="steps">
+		  <h2>Como funciona?</h2>
+		      <ul>
+		        <li>
+		           <span class="fa fa-users"></span>
+		             <h3>Busca</h3>
+		        </li>
+		         <li>
+		           <span class="fa fa-list-ol"></span>
+		             <h3>Compara</h3>
+		        </li>
+		         <li>
+		           <span class="fa fa-file-text-o"></span>
+		             <h3>Cotiza</h3>
+		        </li>
+		         <li>
+		           <span class="fa fa-check-square"></span>
+		             <h3>Contrata</h3>
+		        </li>
+		 	
+		      </ul>
+		      <section class="about-us">
+		        <h2>Quienes somos</h2>
+		        <p>Somos una plataforma que permite encontrar servicios de cualquier tipo profecional,
+		        podras comparar, cotizar y calificar al profecional de una manera segura desde tu casa.
+		        </p>
+		      	
+		      </section>
+
+			
+
+
+
+		</section>
+	</header>
+	<script src="static/build.js"></script>
+</body>
+</html>
