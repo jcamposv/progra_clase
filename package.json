@@ -1,0 +1,18 @@
+{
+  "keywords": [
+    "generator-webpack-server-dev"
+  ],
+  "name": "Project",
+  "description": "clases",
+  "main": "main.js",
+  "author": "Jairo",
+  "license": "ISC",
+  "scripts": {
+    "dev": "webpack-dev-server --inline --hot --no-info",
+    "start": "node_modules/.bin/webpack-dev-server"
+  },
+  "devDependencies": {
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
