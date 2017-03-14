@@ -1,0 +1,68 @@
+body {
+	font-size: 100%;
+	font-family: 'Lato', sans-serif;  
+}
+/*.hero{
+	background: url(../images/hero.png); no-repeat ;
+	background-size: 100%;
+}
+*/
+nav ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+nav ul li{
+	display: inline-block;
+	padding: 0 5px;
+}
+nav ul li a{
+	text-decoration: none;
+	color: #95a5a6;
+
+}
+nav ul li a:hover{
+	text-decoration: underline;
+}
+h1{
+	font-size: 5rem;
+}
+.hero{
+	position: relative;
+}
+.hero .hero-content{
+	position: absolute;
+	max-width: 1280px;
+	top:15px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	color: #ffffff;
+	text-align: center;
+}
+.hero .hero-content h1{
+	text-shadow: 3px 2px rgba(0, 0, 0, 1)
+}
+.hero img{
+	width: 100%;
+}
+form input[type=text]{
+	padding: 10px;
+	width: 40%;
+	background-color: rgba(255, 255, 255, 0.8);
+	border: none;
+}
+form input[type=submit]{
+	background-color: #E74C3C;
+	border: none;
+	padding: 10px 12px;
+	color: #ffffff;
+	cursor: pointer;
+
+}
+form input[type=submit]:hover{
+	opacity: 0.8;
+
+}
+
+

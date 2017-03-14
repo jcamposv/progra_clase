@@ -3,24 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<title>webpack</title>
-	<style>
-		/*
-			La etiqueta style nos permite agregar CSS(styles) a nuestro html
-			Para llamar a un id se utiliza el signo de # y luego el nombre del id.
-			Para llamar a una clase se utiliza el signo de . y luego el nombre de la clase
-		*/
-		#logo{
-			color:#3EAAE3;
-		}
-		.second_color{
-			color:#E74C3C;
-		}
-		img{
-			max-width: 100%;
-		}
-
-	</style>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./src/css/styles.css">
 	<script src="https://use.fontawesome.com/90036920c0.js"></script>
+	<
+	 
 </head>
 <body>
 	<!-- Header es una tag donde va a contener el menu principal ademas podria contener el titulo principal de la
@@ -35,7 +23,8 @@
 					id y class son propiedades que se pueden agregar a un tag en especifico para luego aplicar algun
 					estilo o accion solo puede a ver un id con el mismo nombre en el DOM
 			-->
-			<a href="#" id="logo">
+			<div class="first-nav">
+				<a href="#" id="logo">
 				Cont<span class="second_color">rata</span>
 			</a>
 			<!--
@@ -52,11 +41,12 @@
 					
 				</li>
 				<li>
-					<a href="#">Encuentra Profecionales</a>
+					<a target="_blank" href="http://youtube.com">Encuentra Profecionales</a>
 				</li>
 			</ul>
+			</div>
 			<!-- Close Ul -->
-			<ul>
+			<ul class="second-nav">
 				<li>
 					<a href="#">Registrarse</a>
 				</li>
@@ -72,20 +62,25 @@
 				dentro del form podemos tener input de type text, password, phone, email, submit, textarea, file
 
 			-->
-			<h1>Encuentra un profesional</h1>
-			<form>
+			<div class="hero-content">
+				<h1>Encuentra un profesional</h1>
+				<form>
 				<!--<label>Que tipo de profesional ocupas?</label>-->
 				<input type="text" placeholder="Que tipo de profesional ocupas?" name="job">
-				<input type="submit" value="Search">
-			</form>
+				<input type="submit" value="Buscar" >
+				</form>
+			</div>
 			<img src="src/images/hero.png" alt="Hero Images">
 		</div>
 		<section class="steps">
 		  <h2>Como funciona?</h2>
 		      <ul>
 		        <li>
+		           
 		           <span class="fa fa-users"></span>
 		             <h3>Busca</h3>
+		        }
+		      }
 		        </li>
 		         <li>
 		           <span class="fa fa-list-ol"></span>
@@ -103,7 +98,7 @@
 		      </ul>
 		      <section class="about-us">
 		        <h2>Quienes somos</h2>
-		        <p>Somos una plataforma que permite encontrar servicios de cualquier tipo profecional,
+		        <p style="margin-left:20pix; color:blue">Somos una plataforma que permite encontrar servicios de cualquier tipo profecional,
 		        podras comparar, cotizar y calificar al profecional de una manera segura desde tu casa.
 		        </p>
 		      	
